@@ -24,7 +24,6 @@ spec:
       containers:
       - name: currency-exchange
         image:samplewebjavaapp.azurecr.io/srpazuredevopskubernetesterraformpipeline:32
-        imagePullPolicy: IfNotPresent
         ports:
         - name: liveness-port
           containerPort: 8000
