@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: srpazuredevopskubernetesterraformpipeline 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: srpazuredevopskubernetesterraformpipeline 
+    spec:
+      containers:
+        - name: srpazuredevopskubernetesterraformpipeline 
+          image: samplewebjavaapp.azurecr.io/srpazuredevopskubernetesterraformpipeline
+          ports:
+          - containerPort: 5000
